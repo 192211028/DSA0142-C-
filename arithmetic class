@@ -1,0 +1,44 @@
+#include<iostream>
+#include<conio.h>
+ using namespace std;
+  class arithmetic
+   {
+    private:
+       int x,y;
+    public:
+      void getdata()
+       {
+         cout<<"enter two number:-";
+         cin>>x>>y;
+       }
+     void Addition()
+       {
+        int z=x+y;
+         cout<<"\nAddition = "<<z;
+       }
+     void Subtraction()
+      {
+        int z=x-y;
+         cout<<"\nSubtraction = "<<z;
+      }
+     void Multiplication()
+      {
+        int z=x*y;
+         cout<<"\nMultiplication = "<<z;
+      }
+       void Division()
+      {
+        int z=x/y;
+         cout<<"\nDivision = "<<z;
+      }
+    };
+  int main()
+   {
+     arithmetic a1;
+     a1.getdata(); 
+     a1.Addition();
+     a1.Division();
+     a1.Subtraction();
+     a1.Multiplication();    
+     getch();
+   }
