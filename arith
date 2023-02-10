@@ -1,0 +1,46 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class arithmetic
+{
+private:
+	int a,b;
+public:
+	void getdata()
+	{
+		cout<<"enter two numbers:";
+		cin>>a>>b;
+	}
+	void Addition()
+	{
+		int c=a+b;
+		cout<<"\nAddition= "<<c;
+	}
+	void subtraction()
+	{
+		int c=a-b;
+		cout<<"\nsubtraction="<<c;
+	}
+	void multiplication()
+	{
+		int c=a*b;
+		cout<<"\nmultiplication="<<c;
+	}
+	void division()
+	{
+		int c=a/b;
+		cout<<"\ndivision="<<c;
+	}
+};
+int main()
+{
+	arithmetic a1;
+	a1.getdata();
+	a1.Addition();
+	a1.subtraction();
+	a1.multiplication();
+	a1.division();
+	getch();
+}
+	
+	
