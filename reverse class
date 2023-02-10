@@ -1,0 +1,30 @@
+#include <iostream>
+
+class Reverse {
+  public: 
+    int reverse_number(int num) {
+        int reverse = 0;
+        while (num != 0) {
+            reverse = reverse * 10 + num % 10;
+            num /= 10;
+        }
+        return reverse;
+    }
+
+    int get_data() {
+        int num;
+        std::cout << "Enter an integer: ";
+        std::cin >> num;        
+		
+		return num;
+
+    }
+};
+
+int main() {
+    Reverse obj;
+    int data = obj.get_data();
+    int result = obj.reverse_number(data);
+    std::cout << "The reverse of the given number is: " << result << std::endl;
+    return 0;
+}
