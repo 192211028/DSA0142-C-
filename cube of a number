@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int n,cube;
+    
+
+    cout << "Enter a number: ";
+    cin >> n;
+    
+    
+    cube = n * n * n;
+    
+
+    cout << "Cube of entered number is:" << cube ;
+    return 0;
+}
