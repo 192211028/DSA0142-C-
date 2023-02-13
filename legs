@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int l,c,ch,p,tot,a,b,d;
+	cout<<"enter no.of chicks:";
+	cin>>ch;
+	cout<<"enter no.of cow:";
+	cin>>c;
+	cout<<"enter no.of pig:";
+	cin>>p;
+	a=ch*2;
+	b=c*4;
+	d=p*4;
+	tot=a+b+d;
+	cout<<"total no.of legs:"<<tot;
+	return 0;
+}
