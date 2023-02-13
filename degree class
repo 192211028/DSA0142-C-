@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class degree
+{
+	public:
+		degree()
+		{
+			cout<<"\nI got degree";
+		}
+	};
+	class UG  : public degree
+	{
+		public:
+			UG()
+			{
+	     		cout<<"\nIam in UG class";
+			}
+			
+	};
+	class PG : public degree
+	{
+		public:
+			PG()
+			{
+				cout<<"\nIam in PG class";
+			}
+	};
+	
+	int main()
+	{
+		UG u;
+		PG p;
+		return 0;
+	}
