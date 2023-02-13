@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class A {
+private:
+    int a;
+
+protected:
+    int x; 
+public:
+    void setVal(int v)
+    {
+        x = v;
+    }
+};
+
+class B : private A {
+public:
+    void printVal(void)
+    {
+        setVal(10); 
+        cout << "value of x: " << x << endl;
+        cout<<"Here x is the protected data member of class A, class A is inherited privately to class B.In private inheritance only protected data member and member functions can be accessed by the derived class." ;
+    }
+};
+
+int main()
+{
+    B objB;
+    objB.printVal();
+    return 0;
+}
