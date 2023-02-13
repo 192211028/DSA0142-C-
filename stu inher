@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+
+class Student {
+public:
+
+   int age,marks;
+   char sname[100];
+   char gender[100];
+   char grade[3];
+
+   void input() 
+   {
+
+       cout << "Enter Your Name:";
+       cin.getline(sname, 100);
+
+       cout << "Enter gender:";
+       cin.getline(gender, 100);
+       
+       cout<<"enter your age:";
+       cin>>age;
+       cin.get();
+       
+       cout<<"enter your marks:";
+       cin>>marks;
+       cin.get();
+       
+       cout<<"enter your grade:";
+       cin.getline(grade,3);
+	    
+   }
+
+};
+
+class College : public Student {
+public:
+
+   void display() 
+   {
+       cout << "Your name :" << sname;
+       cout << "\nYour Age :" << age;
+       cout << "\nYour gender :" << gender;
+       cout << "\nYour marks :" << marks;  
+	   cout << "\nYour Grade :" << grade;
+   }
+};
+
+int main() {
+
+   College obj;
+   obj.input();
+   obj.display();
+
+   return 0;
+}
